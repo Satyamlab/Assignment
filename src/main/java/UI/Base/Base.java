@@ -23,7 +23,7 @@ public class Base {
 			driver.set(new FirefoxDriver());
 		}
 		else {
-			
+			throw new RuntimeException("invalid browser selection");
 		}
 		driver.get().get(Data.url);
 		driver.get().manage().window().maximize();

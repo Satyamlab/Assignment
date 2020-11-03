@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 import API.EndPoints.EndPoints;
 import API.EndPoints.RestResponse;
 import API.Model.Response.WeatherResponse;
+import Utility.ExtentReport;
 
 public class APITest {
 

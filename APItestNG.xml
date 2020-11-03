@@ -3,21 +3,25 @@
 
 <suite name="Suite" parallel="tests" thread-count="10">
 
-  <test name="Test1">
+<listeners>
+	<listener class-name="Listener.TestNGListener"></listener>
+</listeners>
+
+  <test name="Validate weather API for Allahabad">
     <parameter name="city" value="Allahabad"></parameter>
     <classes>
       <class name="Test.APITest"/>
     </classes>
   </test> <!-- Test -->
 
-  <test name="Test2">
+  <test name="Validate weather API for Bangalore">
     <parameter name="city" value="Bangalore"></parameter>
     <classes>
       <class name="Test.APITest"/>
     </classes>
   </test> <!-- Test -->
 
-  <test name="Test3">
+  <test name="Validate weather API for Lucknow">
     <parameter name="city" value="Lucknow"></parameter>
     <classes>
       <class name="Test.APITest"/>

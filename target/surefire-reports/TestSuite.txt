@@ -1,4 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.727 s - in TestSuite
+Tests run: 7, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 197.687 s <<< FAILURE! - in TestSuite
+Test.APIUITest.ValidateUIandAPIResult[Allahabad](1)  Time elapsed: 30.353 s  <<< FAILURE!
+java.lang.RuntimeException: Temperature is not with in variance range. UI value: 304.6111 | API value :295.55
+	at Test.APIUITest.ValidateUIandAPIResult(APIUITest.java:30)
+
+Test.APIUITest.ValidateUIandAPIResult[Bengaluru](1)  Time elapsed: 30.353 s  <<< FAILURE!
+java.lang.RuntimeException: Temperature is not with in variance range. UI value: 302.3889 | API value :297.44
+	at Test.APIUITest.ValidateUIandAPIResult(APIUITest.java:30)
+

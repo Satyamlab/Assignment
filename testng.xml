@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 
-<suite name="Suite" parallel = "tests" thread-count = "1">
+<suite name="Suite" parallel = "tests" thread-count = "2">
 
 <listeners>
-	<listener class-name="UI.Listener.TestNGListener"></listener>
+	<listener class-name="Listener.TestNGListener"></listener>
 </listeners>
-	
-  <test name="test1">
+  
+  <test name="validate UI weather functionaity for Allahabad and validate against API">
   	<parameter name="browser" value="chrome" />
   	<parameter name="city" value="Allahabad"></parameter>
     <classes>
@@ -15,28 +15,28 @@
     </classes>
   </test> <!-- Test -->
 
-  <test name="test2">
+  <test name="validate UI weather functionaity for Bengaluru and validate against API">
   	<parameter name="browser" value="chrome" />
   	<parameter name="city" value="Bengaluru"></parameter>
     <classes>
       <class name="Test.APIUITest"/>
     </classes>
-  </test> <!-- Test -->
+  </test>
 
-  <test name="test3">
+  <test name="validate UI weather functionaity for Allahabad">
   	<parameter name="browser" value="chrome" />
   	<parameter name="city" value="Allahabad"></parameter>
     <classes>
       <class name="Test.UITest"/>
     </classes>
-  </test> <!-- Test -->
+  </test>
 
-  <test name="test4">
+  <test name="validate UI weather functionaity for Lucknow">
   	<parameter name="browser" value="chrome" />
   	<parameter name="city" value="Lucknow"></parameter>
     <classes>
       <class name="Test.UITest"/>
     </classes>
-  </test> <!-- Test -->
-  
-</suite> <!-- Suite -->
+  </test>
+
+</suite>
