@@ -8,6 +8,12 @@ import io.restassured.specification.RequestSpecification;
 
 public class EndPoints {
 	
+	/**
+	 * Method for Weather Response API
+	 * 
+	 * @param city
+	 * @return
+	 */
 	public static RestResponse<WeatherResponse> getWeather(String city) {
 		RequestSpecification request;
 		RestAssured.baseURI = Data.APIurl;
