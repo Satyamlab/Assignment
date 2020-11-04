@@ -1,5 +1,8 @@
 # Assignment
 
+Mention project is build using maven. So no extra setup required.
+Configure maven in your id and clone the project 
+
 Trigger point is POM.xml - It will 2 testNG suite in parallel
 
 1. API suite - Which will also run parallel
